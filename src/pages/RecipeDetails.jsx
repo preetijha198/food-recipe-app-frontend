@@ -9,7 +9,7 @@ const RecipeDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/recipes/${id}`)
+      .get(`https://recipe-app-backend-1-i8hd.onrender.com/api/recipes${id}`)
       .then((response) => {
         setRecipe(response.data);
         setLoading(false);
