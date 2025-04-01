@@ -23,7 +23,7 @@ const AddRecipe = () => {
         instructions,
         nutrition,
       };
-      await axios.post("http://localhost:5000/api/recipes", recipeData);
+      await axios.post("https://recipe-app-backend-1-i8hd.onrender.com/api/recipes", recipeData);
       navigate("/");
     } catch (error) {
       console.error("Error adding recipe:", error);
